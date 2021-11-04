@@ -8,6 +8,6 @@ O projeto atualmente demonstra a funcionalidade dos métodos GET e POST utilizan
 
 ## 🔧 Alterações
 
-- Inclusão do Bootstrap 5 e Font Awesome para utilização de icones.
-- Rescrito o servlet removendo o método write, passando a utilizar request & response para páginas .jsp com conteúdo dinâmico.
-
+- Inclusão do Bootstrap 5 e Font Awesome para utilização de icones;
+- Remoção do método write no Servlet;
+- Utilização de request & response para páginas .jsp com conteúdo dinâmico.
