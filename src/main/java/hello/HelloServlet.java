@@ -90,7 +90,7 @@ public class HelloServlet extends HttpServlet {
             horario = "manha";
         } else if (hora >= 12 && hora < 18) {
             horario = "tarde";
-        } else if (hora >= 18 && hora < 24) {
+        } else {
             horario = "noite";
         }
 
