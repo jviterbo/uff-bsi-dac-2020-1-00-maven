@@ -25,8 +25,8 @@
                     <label class="form-check-label" for="flexRadio">Francês</label>
                 </div>    
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" id="flexRadioDefault4" type="radio" name="lang" value="kr">
-                    <label class="form-check-label" for="flexRadio">Coreano</label>
+                    <input class="form-check-input" id="flexRadioDefault4" type="radio" name="lang" value="it">
+                    <label class="form-check-label" for="flexRadio">Italiano</label>
                 </div>    
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" id="flexRadioDefault5" type="radio" name="lang" value="ru">
