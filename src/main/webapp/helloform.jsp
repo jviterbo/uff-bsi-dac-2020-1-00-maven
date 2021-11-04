@@ -10,7 +10,7 @@
         <div class="container text-center">
             <h1 class="display-6">Formulário de HelloWorld (usando o HelloServlet.java)</h1>
             
-            <form action="alomundo" method="post" class="border bg-light">
+            <form action="formlang" method="post" class="border bg-light">
                 <h5>Idioma:</h5>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" id="flexRadioDefault1" type="radio" name="lang" value="pt" checked>
@@ -42,6 +42,14 @@
                     <button type="submit" class="btn btn-secondary mb-3" value="Cumprimentar">Cumprimentar</button>
                 </div>
             </form>
+            
+            
+            <div class="row">
+                <div class="col">
+                    <br>
+                    <p class="display-4 alert-warning">${mensagem}</p>
+                </div>
+            </div>
         </div>
         
         <script src="https://kit.fontawesome.com/28a8996ecc.js" crossorigin="anonymous"></script>
