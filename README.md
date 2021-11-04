@@ -10,4 +10,5 @@ O projeto atualmente demonstra a funcionalidade dos métodos GET e POST utilizan
 
 - Inclusão do Bootstrap 5 e Font Awesome para utilização de icones;
 - Remoção do método write no Servlet;
-- Utilização de request & response para páginas .jsp com conteúdo dinâmico.
+- Utilização de request & response para páginas .jsp com conteúdo dinâmico;
+- Coleta da hora atual no momento do acesso ao form, e através desse horário é definido o cumprimento.
