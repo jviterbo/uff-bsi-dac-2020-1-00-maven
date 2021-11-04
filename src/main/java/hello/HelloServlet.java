@@ -93,7 +93,7 @@ public class HelloServlet extends HttpServlet {
         } else if (hora >= 18 && hora < 24) {
             horario = "noite";
         }
-        
+
         String msg = "";
 
         String lang = request.getParameter("lang");
@@ -102,34 +102,71 @@ public class HelloServlet extends HttpServlet {
         }
         switch (lang) {
             case "pt":
-                if(horario.equals("manha")){msg = "Bom Dia, ";}
-                if(horario.equals("tarde")){msg = "Boa Tarde, ";}
-                if(horario.equals("noite")){msg = "Boa Noite, ";}
+                if (horario.equals("manha")) {
+                    msg = "Bom Dia, ";
+                }
+                if (horario.equals("tarde")) {
+                    msg = "Boa Tarde, ";
+                }
+                if (horario.equals("noite")) {
+                    msg = "Boa Noite, ";
+                }
                 break;
             case "en":
-                if(horario.equals("manha")){msg = "Good Morning, ";}
-                if(horario.equals("tarde")){msg = "Good Afternoon, ";}
-                if(horario.equals("noite")){msg = "Good Evening, ";}
+                if (horario.equals("manha")) {
+                    msg = "Good Morning, ";
+                }
+                if (horario.equals("tarde")) {
+                    msg = "Good Afternoon, ";
+                }
+                if (horario.equals("noite")) {
+                    msg = "Good Evening, ";
+                }
                 break;
             case "fr":
-                if(horario.equals("manha")){msg = "Bonjour, ";}
-                if(horario.equals("tarde")){msg = "Bon Après-midi, ";}
-                if(horario.equals("noite")){msg = "Bonne Soirée, ";}
+                if (horario.equals("manha")) {
+                    msg = "Bonjour, ";
+                }
+                if (horario.equals("tarde")) {
+                    msg = "Bon Après-midi, ";
+                }
+                if (horario.equals("noite")) {
+                    msg = "Bonne Soirée, ";
+                }
                 break;
             case "de":
-                if(horario.equals("manha")){msg = "Guten Morgen, ";}
-                if(horario.equals("tarde")){msg = "Guten Tag, ";}
-                if(horario.equals("noite")){msg = "Gute Nacht, ";}
+                if (horario.equals("manha")) {
+                    msg = "Guten Morgen, ";
+                }
+                if (horario.equals("tarde")) {
+                    msg = "Guten Tag, ";
+                }
+                if (horario.equals("noite")) {
+                    msg = "Gute Nacht, ";
+                }
                 break;
             case "it":
-                if(horario.equals("manha")){msg = "Buon Biorno, ";}
-                if(horario.equals("tarde")){msg = "Buon Pomeriggio, ";}
-                if(horario.equals("noite")){msg = "Buona Notte, ";};
+                if (horario.equals("manha")) {
+                    msg = "Buon Biorno, ";
+                }
+                if (horario.equals("tarde")) {
+                    msg = "Buon Pomeriggio, ";
+                }
+                if (horario.equals("noite")) {
+                    msg = "Buona Notte, ";
+                }
+                ;
                 break;
             case "ru":
-                if(horario.equals("manha")){msg = "Dobroye utro, ";}
-                if(horario.equals("tarde")){msg = "Dobryy den', ";}
-                if(horario.equals("noite")){msg = "Spokoynoy Nochi, ";}
+                if (horario.equals("manha")) {
+                    msg = "Dobroye utro, ";
+                }
+                if (horario.equals("tarde")) {
+                    msg = "Dobryy den', ";
+                }
+                if (horario.equals("noite")) {
+                    msg = "Spokoynoy Nochi, ";
+                }
                 break;
         }
 
