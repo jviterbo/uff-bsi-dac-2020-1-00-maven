@@ -12,3 +12,4 @@ O projeto atualmente demonstra a funcionalidade dos métodos GET e POST utilizan
 - Remoção do método write no Servlet;
 - Utilização de request & response para páginas .jsp com conteúdo dinâmico;
 - Coleta da hora atual no momento do acesso ao form, e através desse horário é definido o cumprimento.
+- Adicionado formas de tratamento a escolha.
