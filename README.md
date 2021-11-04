@@ -4,7 +4,7 @@ Fork em desenvolvimento pelo aluno Gustavo Santos, projeto original do professor
 
 ## 🚀 Funcionalidades
 
-O projeto atualmente demonstra a funcionalidade do GET e POST utilizando Maven e Servlets.
+O projeto atualmente demonstra a funcionalidade dos métodos GET e POST utilizando Maven e Servlets.
 
 ## 🔧 Alterações
 
