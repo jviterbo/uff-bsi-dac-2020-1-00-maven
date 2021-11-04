@@ -82,10 +82,12 @@ public class HelloServlet extends HttpServlet {
     }
 
     private void formlang(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String msg = "";
+        String horario = "";
 
         Calendar data = Calendar.getInstance();
         int hora = data.get(Calendar.HOUR_OF_DAY);
-        String horario = "";
+
         if (hora >= 0 && hora < 12) {
             horario = "manha";
         } else if (hora >= 12 && hora < 18) {
@@ -94,83 +96,112 @@ public class HelloServlet extends HttpServlet {
             horario = "noite";
         }
 
-        String msg = "";
-
         String lang = request.getParameter("lang");
+        String tratamento = request.getParameter("tratamento");
+        String nome = request.getParameter("nome");
+
         if (lang == null) {
             lang = "pt";
         }
         switch (lang) {
             case "pt":
+                if (tratamento.equals("sr")) {
+                    tratamento = "Senhor ";
+                } else if (tratamento.equals("sra")) {
+                    tratamento = "Senhora ";
+                } else {
+                    tratamento = "";
+                }
                 if (horario.equals("manha")) {
-                    msg = "Bom Dia, ";
-                }
-                if (horario.equals("tarde")) {
-                    msg = "Boa Tarde, ";
-                }
-                if (horario.equals("noite")) {
-                    msg = "Boa Noite, ";
+                    msg = "Bom Dia, " + tratamento;
+                } else if (horario.equals("tarde")) {
+                    msg = "Boa Tarde, " + tratamento;
+                } else {
+                    msg = "Boa Noite, " + tratamento;
                 }
                 break;
             case "en":
+                if (tratamento.equals("sr")) {
+                    tratamento = "Sir ";
+                } else if (tratamento.equals("sra")) {
+                    tratamento = "Madam ";
+                } else {
+                    tratamento = "";
+                }
                 if (horario.equals("manha")) {
-                    msg = "Good Morning, ";
-                }
-                if (horario.equals("tarde")) {
-                    msg = "Good Afternoon, ";
-                }
-                if (horario.equals("noite")) {
-                    msg = "Good Evening, ";
+                    msg = "Good Morning, " + tratamento;
+                } else if (horario.equals("tarde")) {
+                    msg = "Good Afternoon, " + tratamento;
+                } else {
+                    msg = "Good Evening, " + tratamento;
                 }
                 break;
             case "fr":
+                if (tratamento.equals("sr")) {
+                    tratamento = "Monsieur ";
+                } else if (tratamento.equals("sra")) {
+                    tratamento = "Madame ";
+                } else {
+                    tratamento = "";
+                }
                 if (horario.equals("manha")) {
-                    msg = "Bonjour, ";
-                }
-                if (horario.equals("tarde")) {
-                    msg = "Bon Après-midi, ";
-                }
-                if (horario.equals("noite")) {
-                    msg = "Bonne Soirée, ";
+                    msg = "Bonjour, " + tratamento;
+                } else if (horario.equals("tarde")) {
+                    msg = "Bon Après-midi, " + tratamento;
+                } else {
+                    msg = "Bonne Soirée, " + tratamento;
                 }
                 break;
             case "de":
+                if (tratamento.equals("sr")) {
+                    tratamento = "Herr ";
+                } else if (tratamento.equals("sra")) {
+                    tratamento = "Gnädige Frau ";
+                } else {
+                    tratamento = "";
+                }
                 if (horario.equals("manha")) {
-                    msg = "Guten Morgen, ";
-                }
-                if (horario.equals("tarde")) {
-                    msg = "Guten Tag, ";
-                }
-                if (horario.equals("noite")) {
-                    msg = "Gute Nacht, ";
+                    msg = "Guten Morgen, " + tratamento;
+                } else if (horario.equals("tarde")) {
+                    msg = "Guten Tag, " + tratamento;
+                } else {
+                    msg = "Gute Nacht, " + tratamento;
                 }
                 break;
             case "it":
+                if (tratamento.equals("sr")) {
+                    tratamento = "Signore ";
+                } else if (tratamento.equals("sra")) {
+                    tratamento = "Signora ";
+                } else {
+                    tratamento = "";
+                }
                 if (horario.equals("manha")) {
-                    msg = "Buon Biorno, ";
-                }
-                if (horario.equals("tarde")) {
-                    msg = "Buon Pomeriggio, ";
-                }
-                if (horario.equals("noite")) {
-                    msg = "Buona Notte, ";
+                    msg = "Buon Biorno, " + tratamento;
+                } else if (horario.equals("tarde")) {
+                    msg = "Buon Pomeriggio, " + tratamento;
+                } else {
+                    msg = "Buona Notte, " + tratamento;
                 }
                 ;
                 break;
             case "ru":
+                if (tratamento.equals("sr")) {
+                    tratamento = "Ser ";
+                } else if (tratamento.equals("sra")) {
+                    tratamento = "Gospozha ";
+                } else {
+                    tratamento = "";
+                }
                 if (horario.equals("manha")) {
-                    msg = "Dobroye utro, ";
-                }
-                if (horario.equals("tarde")) {
-                    msg = "Dobryy den', ";
-                }
-                if (horario.equals("noite")) {
-                    msg = "Spokoynoy Nochi, ";
+                    msg = "Dobroye utro, " + tratamento;
+                } else if (horario.equals("tarde")) {
+                    msg = "Dobryy den', " + tratamento;
+                } else {
+                    msg = "Spokoynoy Nochi, " + tratamento;
                 }
                 break;
         }
-
-        String nome = request.getParameter("nome");
 
         if (nome == null || nome.equals("")) {
             nome = "Fulano";

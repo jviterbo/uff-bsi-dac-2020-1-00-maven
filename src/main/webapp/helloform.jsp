@@ -37,6 +37,23 @@
                     <label class="form-check-label" for="flexRadio">Alemão</label>
                 </div>
                 <div>
+                    <br>
+                    <h5>Forma de Tratamento:</h5>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="tratamento" value="" checked>
+                        <label class="form-check-label" for="inlineRadio1">Nenhuma</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="tratamento" value="sr">
+                        <label class="form-check-label" for="inlineRadio2">Sr.</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="tratamento" value="sra">
+                        <label class="form-check-label" for="inlineRadio2">Sra.</label>
+                    </div>
+
+                </div>
+                <div>
                     <label name="nome" class="form-label h5">Nome:</label>
                     <input type="text" class="form-control" name="nome" placeholder="Nome"><br>
                     <button type="submit" class="btn btn-secondary mb-3" value="Cumprimentar">Cumprimentar</button>
