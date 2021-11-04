@@ -15,7 +15,7 @@
                         <i class="fab fa-gofore"></i>
                     </span>
                     <p>HelloServlet.java (Método GET)</p>
-                    <a href=".\alomundo?lang=pt&nome=Fulano" class="btn btn-secondary" role="button">Acessar</a>
+                    <a href=".\alomundo?lang=pt&nome=Fulano" class="btn btn-secondary" role="button">Testar</a>
 
                 </div>
                 <div class="col">
